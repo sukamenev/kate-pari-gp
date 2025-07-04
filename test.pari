@@ -1,0 +1,23 @@
+\\ This is a comment
+/* Multi-line comment */
+
+default(nbthreads, default(nbthreads)-4);
+
+\r _variables.gp
+
+x = 3.14e-10;
+
+if (x > 0, print("Positive"));
+
+ell = ellinit([0, 0, 1, -1, 0]);
+write("output.txt", "Hello");
+
+unique(v) =
+{
+  a = Vec(Set(v));
+  for(i=1, 10,
+    print(i)
+  );
+  a
+};
+
