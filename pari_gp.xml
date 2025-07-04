@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "language.dtd">
+<language name="PARI/GP" section="Scientific" extensions="*.gp;*.pari" version="2.10" kateversion="6.0" author="Veter Kamenev" license="LGPL" priority="15">
+    <highlighting>
+        <!-- Sorted list of keywords-commands -->
+        <list name="keywords">
+            <item>addhelp</item>
+            <item>alarm</item>
+            <item>alias</item>
+            <item>allocatemem</item>
+            <item>break</item>
+            <item>breakpoint</item>
+            <item>call</item>
+            <item>dbg_down</item>
+            <item>dbg_err</item>
+            <item>dbg_up</item>
+            <item>dbg_x</item>
+            <item>default</item>
+            <item>else</item>
+            <item>error</item>
+            <item>export</item>
+            <item>exportall</item>
+            <item>extern</item>
+            <item>externstr</item>
+            <item>for</item>
+            <item>forcomposite</item>
+            <item>fordiv</item>
+            <item>fordivfactored</item>
+            <item>foreach</item>
+            <item>forell</item>
+            <item>forfactored</item>
+            <item>forpart</item>
+            <item>forperm</item>
+            <item>forprime</item>
+            <item>forprimestep</item>
+            <item>forqfvec</item>
+            <item>forsquarefree</item>
+            <item>forstep</item>
+            <item>forsubgroup</item>
+            <item>forsubset</item>
+            <item>forvec</item>
+            <item>global</item>
+            <item>if</item>
+            <item>iferr</item>
+            <item>inline</item>
+            <item>input</item>
+            <item>install</item>
+            <item>kill</item>
+            <item>local</item>
+            <item>localbitprec</item>
+            <item>localprec</item>
+            <item>my</item>
+            <item>next</item>
+            <item>parapply</item>
+            <item>pareval</item>
+            <item>parfor</item>
+            <item>parforeach</item>
+            <item>parforprime</item>
+            <item>parforprimestep</item>
+            <item>parforstep</item>
+            <item>parforvec</item>
+            <item>parploth</item>
+            <item>parplothexport</item>
+            <item>parselect</item>
+            <item>parsum</item>
+            <item>print</item>
+            <item>print1</item>
+            <item>printf</item>
+            <item>printp</item>
+            <item>printsep</item>
+            <item>printsep1</item>
+            <item>printtex</item>
+            <item>quit</item>
+            <item>read</item>
+            <item>readstr</item>
+            <item>readvec</item>
+            <item>return</item>
+            <item>select</item>
+            <item>self</item>
+            <item>simplify</item>
+            <item>solve</item>
+            <item>solvestep</item>
+            <item>subst</item>
+            <item>system</item>
+            <item>trap</item>
+            <item>unexport</item>
+            <item>unexportall</item>
+            <item>uninline</item>
+            <item>until</item>
+            <item>version</item>
+            <item>warning</item>
+            <item>whatnow</item>
+            <item>while</item>
+            <item>write</item>
+            <item>write1</item>
+            <item>writebin</item>
+            <item>writetex</item>           
+            
+            <!-- File operations (commands) -->
+            <item>fileclose</item>
+            <item>fileflush</item>
+            <item>fileopen</item>
+            <item>fileread</item>
+            <item>filereadstr</item>
+            <item>filewrite</item>
+            <item>filewrite1</item>
+            <item>fileextern</item>
+            
+            <!-- Memory and system commands -->
+            <item>getheap</item>
+            <item>getstack</item>
+            <item>gettime</item>
+            <item>getabstime</item>
+            <item>getwalltime</item>
+            <item>getcache</item>
+            <item>getenv</item>
+            <item>getlocalbitprec</item>
+            <item>getlocalprec</item>
+        </list>
+
+        <!-- Complete list of operators -->
+        <list name="operators">
+            <item>!</item>
+            <item>!=</item>
+            <item>%</item>
+            <item>%=</item>
+            <item>&amp;</item>
+            <item>&amp;&amp;</item>
+            <item>*</item>
+            <item>+</item>
+            <item>+=</item>
+            <item>-</item>
+            <item>-=</item>
+            <item>..</item>
+            <item>/</item>
+            <item>\</item>
+            <item>&lt;</item>
+            <item>&lt;&lt;</item>
+            <item>&lt;=</item>
+            <item>=</item>
+            <item>==</item>
+            <item>&gt;</item>
+            <item>&gt;=</item>
+            <item>&gt;&gt;</item>
+            <item>^</item>
+            <item>|</item>
+            <item>||</item>
+            <item>~</item>
+            <item>++</item>
+            <item>--</item>
+            <item>-&gt;</item>
+        </list>
+
+        <!-- Complete sorted list of functions -->
+        <list name="functions">
+            <item>abs</item>
+            <item>apply</item>
+            <item>charpoly</item>
+            <item>cos</item>
+            <item>denominator</item>
+            <item>elladd</item>
+            <item>ellheight</item>
+            <item>ellinit</item>
+            <item>ellmul</item>
+            <item>ellorder</item>
+            <item>ellpoint</item>
+            <item>ellpow</item>
+            <item>elltors</item>
+            <item>eval</item>
+            <item>exp</item>
+            <item>factor</item>
+            <item>lift</item>
+            <item>listcreate</item>
+            <item>listkill</item>
+            <item>listpop</item>
+            <item>listput</item>
+            <item>listsort</item>
+            <item>log</item>
+            <item>matdet</item>
+            <item>matimage</item>
+            <item>matinverse</item>
+            <item>matker</item>
+            <item>matrank</item>
+            <item>matrix</item>
+            <item>matsize</item>
+            <item>mattranspose</item>
+            <item>max</item>
+            <item>min</item>
+            <item>norm</item>
+            <item>numerator</item>
+            <item>polroots</item>
+            <item>prime</item>
+            <item>primes</item>
+            <item>primes0</item>
+            <item>prod</item>
+            <item>random</item>
+            <item>round</item>
+            <item>sin</item>
+            <item>sqrt</item>
+            <item>sqrtn</item>
+            <item>tan</item>
+            <item>trace</item>
+            <item>vector</item>
+            <item>vecsort</item>
+            <item>znorder</item>
+            <!-- Additional mathematical functions -->
+            <item>atan</item>
+            <item>binomial</item>
+            <item>contfrac</item>
+            <item>deriv</item>
+            <item>divisors</item>
+            <item>eulerphi</item>
+            <item>ffgen</item>
+            <item>ffinit</item>
+            <item>fflog</item>
+            <item>fforder</item>
+            <item>ffprimroot</item>
+            <item>gcd</item>
+            <item>hilbert</item>
+            <item>imag</item>
+            <item>intformal</item>
+            <item>ispower</item>
+            <item>ispseudoprime</item>
+            <item>issquare</item>
+            <item>kronecker</item>
+            <item>lcm</item>
+            <item>moebius</item>
+            <item>norml2</item>
+            <item>numdiv</item>
+            <item>omega</item>
+            <item>precision</item>
+            <item>real</item>
+            <item>sigma</item>
+            <item>valuation</item>
+            <item>zeta</item>
+            <!-- Constructors -->
+            <item>Col</item>
+            <item>Colrev</item>
+            <item>List</item>
+            <item>Map</item>
+            <item>Mat</item>
+            <item>Mod</item>
+            <item>Pol</item>
+            <item>Polrev</item>
+            <item>Qfb</item>
+            <item>Ser</item>
+            <item>Set</item>
+            <item>Str</item>
+            <item>Strchr</item>
+            <item>Strexpand</item>
+            <item>Strprintf</item>
+            <item>Strtex</item>
+            <item>Vec</item>
+            <item>Vecrev</item>
+            <item>Vecsmall</item>
+            <!-- Additional PARI/GP functions -->
+            <item>acos</item>
+            <item>acosh</item>
+            <item>agm</item>
+            <item>algdep</item>
+            <item>asin</item>
+            <item>asinh</item>
+            <item>atanh</item>
+            <item>bernfrac</item>
+            <item>bernreal</item>
+            <item>bernvec</item>
+            <item>besselh1</item>
+            <item>besselh2</item>
+            <item>besseli</item>
+            <item>besselj</item>
+            <item>besseljh</item>
+            <item>besselk</item>
+            <item>besseln</item>
+            <item>bestappr</item>
+            <item>bezout</item>
+            <item>bigomega</item>
+            <item>binary</item>
+            <item>bitand</item>
+            <item>bitneg</item>
+            <item>bitor</item>
+            <item>bitxor</item>
+            <item>ceil</item>
+            <item>centerlift</item>
+            <item>changevar</item>
+            <item>char</item>
+            <item>chinese</item>
+            <item>component</item>
+            <item>concat</item>
+            <item>conj</item>
+            <item>content</item>
+            <item>contfrac</item>
+            <item>contfracpnqn</item>
+            <item>core</item>
+            <item>coredisc</item>
+            <item>cosh</item>
+            <item>cotan</item>
+            <item>debugmem</item>
+            <item>digits</item>
+            <item>dirdiv</item>
+            <item>direuler</item>
+            <item>dirmul</item>
+            <item>dirzetak</item>
+            <item>divisors</item>
+            <item>divisorslenstra</item>
+            <item>eint1</item>
+            <item>ellak</item>
+            <item>ellan</item>
+            <item>ellap</item>
+            <item>ellbil</item>
+            <item>ellchangecurve</item>
+            <item>ellchangepoint</item>
+            <item>elldivpol</item>
+            <item>elleisnum</item>
+            <item>elleta</item>
+            <item>ellformaldifferential</item>
+            <item>ellformalexp</item>
+            <item>ellformallog</item>
+            <item>ellformalpoint</item>
+            <item>ellformalw</item>
+            <item>ellfromeqn</item>
+            <item>ellgenerators</item>
+            <item>ellglobalred</item>
+            <item>ellgroup</item>
+            <item>ellheegner</item>
+            <item>ellheightmatrix</item>
+            <item>ellisogeny</item>
+            <item>ellisoncurve</item>
+            <item>ellissupersingular</item>
+            <item>ellj</item>
+            <item>elllocalred</item>
+            <item>elllseries</item>
+            <item>ellminimalmodel</item>
+            <item>ellmodulareqn</item>
+            <item>ellorder</item>
+            <item>ellpadicfrobenius</item>
+            <item>ellpadicheight</item>
+            <item>ellpadiclog</item>
+            <item>ellpadics2</item>
+            <item>ellpadicw</item>
+            <item>ellperiods</item>
+            <item>ellpointtoz</item>
+            <item>ellpow</item>
+            <item>ellrootno</item>
+            <item>ellsea</item>
+            <item>ellsearch</item>
+            <item>ellsigma</item>
+            <item>ellsub</item>
+            <item>elltaniyama</item>
+            <item>elltatepairing</item>
+            <item>elltors</item>
+            <item>ellweilpairing</item>
+            <item>ellwp</item>
+            <item>ellzeta</item>
+            <item>ellztopoint</item>
+            <item>erfc</item>
+            <item>eta</item>
+            <item>euler</item>
+            <item>eval</item>
+            <item>exp</item>
+            <item>expm1</item>
+            <item>factor</item>
+            <item>factorback</item>
+            <item>factorcantor</item>
+            <item>factorff</item>
+            <item>factorial</item>
+            <item>factorint</item>
+            <item>factormod</item>
+            <item>ffgen</item>
+            <item>ffinit</item>
+            <item>fflog</item>
+            <item>ffnbirred</item>
+            <item>fforder</item>
+            <item>ffprimroot</item>
+            <item>fibonacci</item>
+            <item>floor</item>
+            <item>gamma</item>
+            <item>gammah</item>
+            <item>gcd</item>
+            <item>hclassno</item>
+            <item>hyperu</item>
+            <item>idealadd</item>
+            <item>idealaddtoone</item>
+            <item>idealappr</item>
+            <item>idealchinese</item>
+            <item>idealcoprime</item>
+            <item>idealdiv</item>
+            <item>idealfactor</item>
+            <item>idealhnf</item>
+            <item>idealintersect</item>
+            <item>idealinv</item>
+            <item>ideallist</item>
+            <item>ideallistarch</item>
+            <item>ideallog</item>
+            <item>idealmin</item>
+            <item>idealmul</item>
+            <item>idealnorm</item>
+            <item>idealpow</item>
+            <item>idealprimedec</item>
+            <item>idealred</item>
+            <item>idealstar</item>
+            <item>idealtwoelt</item>
+            <item>idealval</item>
+            <item>imag</item>
+            <item>incgam</item>
+            <item>incgamc</item>
+            <item>intformal</item>
+            <item>intnum</item>
+            <item>intnumgauss</item>
+            <item>intnuminit</item>
+            <item>intnumromb</item>
+            <item>ispower</item>
+            <item>isprime</item>
+            <item>ispseudoprime</item>
+            <item>issquare</item>
+            <item>issquarefree</item>
+            <item>kronecker</item>
+            <item>lcm</item>
+            <item>length</item>
+            <item>lex</item>
+            <item>lift</item>
+            <item>lindep</item>
+            <item>listcreate</item>
+            <item>listinsert</item>
+            <item>listkill</item>
+            <item>listpop</item>
+            <item>listput</item>
+            <item>listsort</item>
+            <item>log</item>
+            <item>log1p</item>
+            <item>matadjoint</item>
+            <item>matcompanion</item>
+            <item>matdet</item>
+            <item>matdiagonal</item>
+            <item>mateigen</item>
+            <item>matfrobenius</item>
+            <item>mathess</item>
+            <item>mathilbert</item>
+            <item>matid</item>
+            <item>matimage</item>
+            <item>matindexrank</item>
+            <item>matintersect</item>
+            <item>matinverseimage</item>
+            <item>matisdiagonal</item>
+            <item>matker</item>
+            <item>matkerint</item>
+            <item>matmuldiagonal</item>
+            <item>matmultodiagonal</item>
+            <item>matpascal</item>
+            <item>matrank</item>
+            <item>matrix</item>
+            <item>matrixqz</item>
+            <item>matsize</item>
+            <item>matsnf</item>
+            <item>matsolve</item>
+            <item>matsolvemod</item>
+            <item>matsupplement</item>
+            <item>mattranspose</item>
+            <item>max</item>
+            <item>min</item>
+            <item>minpoly</item>
+            <item>moebius</item>
+            <item>nextprime</item>
+            <item>nfalgtobasis</item>
+            <item>nfbasis</item>
+            <item>nfbasistoalg</item>
+            <item>nfdetint</item>
+            <item>nfdisc</item>
+            <item>nfeltadd</item>
+            <item>nfeltdiv</item>
+            <item>nfeltdivrem</item>
+            <item>nfeltmul</item>
+            <item>nfeltnorm</item>
+            <item>nfeltpow</item>
+            <item>nfeltreduce</item>
+            <item>nfelttrace</item>
+            <item>nfeltval</item>
+            <item>nffactor</item>
+            <item>nffactormod</item>
+            <item>nfgaloisapply</item>
+            <item>nfgaloisconj</item>
+            <item>nfhilbert</item>
+            <item>nfinit</item>
+            <item>nfisideal</item>
+            <item>nfisincl</item>
+            <item>nfisisom</item>
+            <item>nfkermodpr</item>
+            <item>nfmodprinit</item>
+            <item>nfnewprec</item>
+            <item>nfroots</item>
+            <item>nfrootsof1</item>
+            <item>nfsnf</item>
+            <item>nfsolvemodpr</item>
+            <item>nfsubfields</item>
+            <item>norm</item>
+            <item>norml2</item>
+            <item>normlp</item>
+            <item>numbpart</item>
+            <item>numdiv</item>
+            <item>numerator</item>
+            <item>numtoperm</item>
+            <item>omega</item>
+            <item>oo</item>
+            <!-- P-adic functions -->
+            <item>padicappr</item>
+            <item>padicfields</item>
+            <item>padicprec</item>
+            <item>partitions</item>
+            <item>parvector</item>
+            <!-- Permutation functions -->
+            <item>permcycles</item>
+            <item>permorder</item>
+            <item>permsign</item>
+            <item>permtonum</item>
+            <!-- Plotting functions -->
+            <item>plot</item>
+            <item>plotarc</item>
+            <item>plotbox</item>
+            <item>plotclip</item>
+            <item>plotcolor</item>
+            <item>plotcopy</item>
+            <item>plotcursor</item>
+            <item>plotdraw</item>
+            <item>plotexport</item>
+            <item>ploth</item>
+            <item>plothexport</item>
+            <item>plothraw</item>
+            <item>plothrawexport</item>
+            <item>plothsizes</item>
+            <item>plotinit</item>
+            <item>plotkill</item>
+            <item>plotlines</item>
+            <item>plotlinetype</item>
+            <item>plotmove</item>
+            <item>plotpoints</item>
+            <item>plotpointsize</item>
+            <item>plotpointtype</item>
+            <item>plotrbox</item>
+            <item>plotrecth</item>
+            <item>plotrecthraw</item>
+            <item>plotrline</item>
+            <item>plotrmove</item>
+            <item>plotrpoint</item>
+            <item>plotscale</item>
+            <item>plotstring</item>
+            <item>plotterm</item>
+            <!-- Polynomial functions -->
+            <item>polchebyshev</item>
+            <item>polclass</item>
+            <item>polcoef</item>
+            <item>polcoeff</item>
+            <item>polcompositum</item>
+            <item>polcyclo</item>
+            <item>polcyclofactors</item>
+            <item>poldegree</item>
+            <item>poldisc</item>
+            <item>poldiscfactors</item>
+            <item>poldiscreduced</item>
+            <item>polfromroots</item>
+            <item>polgalois</item>
+            <item>polgraeffe</item>
+            <item>polhensellift</item>
+            <item>polhermite</item>
+            <item>polinterpolate</item>
+            <item>polisclass</item>
+            <item>poliscyclo</item>
+            <item>poliscycloprod</item>
+            <item>polisirreducible</item>
+            <item>pollaguerre</item>
+            <item>pollead</item>
+            <item>pollegendre</item>
+            <item>polmodular</item>
+            <item>polrecip</item>
+            <item>polred</item>
+            <item>polredabs</item>
+            <item>polredbest</item>
+            <item>polredord</item>
+            <item>polresultant</item>
+            <item>polresultantext</item>
+            <item>polroots</item>
+            <item>polrootsbound</item>
+            <item>polrootsff</item>
+            <item>polrootsmod</item>
+            <item>polrootspadic</item>
+            <item>polrootsreal</item>
+            <item>polsturm</item>
+            <item>polsubcyclo</item>
+            <item>polsubcyclofast</item>
+            <item>polsylvestermatrix</item>
+            <item>polsym</item>
+            <item>poltchebi</item>
+            <item>polteichmuller</item>
+            <item>poltomonic</item>
+            <item>poltschirnhaus</item>
+            <item>polylog</item>
+            <item>polylogmult</item>
+            <item>polzagier</item>
+            <item>powers</item>
+            <item>precision</item>
+            <item>precprime</item>
+            <item>primecert</item>
+            <item>primecertexport</item>
+            <item>primecertisvalid</item>
+            <item>primepi</item>
+            <item>prod</item>
+            <item>prodeuler</item>
+            <item>prodeulerrat</item>
+            <item>prodinf</item>
+            <item>prodnumrat</item>
+            <item>psdraw</item>
+            <item>psi</item>
+            <item>psploth</item>
+            <item>psplothraw</item>
+            <!-- Quadratic forms functions -->
+            <item>qfauto</item>
+            <item>qfautoexport</item>
+            <item>qfbclassno</item>
+            <item>qfbcomp</item>
+            <item>qfbcompraw</item>
+            <item>qfbcornacchia</item>
+            <item>qfbhclassno</item>
+            <item>qfbil</item>
+            <item>qfbnucomp</item>
+            <item>qfbnupow</item>
+            <item>qfbpow</item>
+            <item>qfbpowraw</item>
+            <item>qfbprimeform</item>
+            <item>qfbred</item>
+            <item>qfbredsl2</item>
+            <item>qfbsolve</item>
+            <item>qfcholesky</item>
+            <item>qfcvp</item>
+            <item>qfeval</item>
+            <item>qfgaussred</item>
+            <item>qfisom</item>
+            <item>qfisominit</item>
+            <item>qfjacobi</item>
+            <item>qflll</item>
+            <item>qflllgram</item>
+            <item>qfminim</item>
+            <item>qfminimize</item>
+            <item>qfnorm</item>
+            <item>qforbits</item>
+            <item>qfparam</item>
+            <item>qfperfection</item>
+            <item>qfrep</item>
+            <item>qfsign</item>
+            <item>qfsolve</item>
+            <!-- Quadratic field functions -->
+            <item>quadclassunit</item>
+            <item>quaddisc</item>
+            <item>quadgen</item>
+            <item>quadhilbert</item>
+            <item>quadpoly</item>
+            <item>quadray</item>
+            <item>quadregulator</item>
+            <item>quadunit</item>
+            <item>quadunitindex</item>
+            <item>quadunitnorm</item>
+            <item>ramanujantau</item>
+            <item>random</item>
+            <item>randomprime</item>
+            <item>real</item>
+            <item>removeprimes</item>
+            <!-- Relative number field functions -->
+            <item>rnfalgtobasis</item>
+            <item>rnfbasis</item>
+            <item>rnfbasistoalg</item>
+            <item>rnfcharpoly</item>
+            <item>rnfconductor</item>
+            <item>rnfdedekind</item>
+            <item>rnfdet</item>
+            <item>rnfdisc</item>
+            <item>rnfeltabstorel</item>
+            <item>rnfeltdown</item>
+            <item>rnfeltnorm</item>
+            <item>rnfeltreltoabs</item>
+            <item>rnfelttrace</item>
+            <item>rnfeltup</item>
+            <item>rnfequation</item>
+            <item>rnfhnfbasis</item>
+            <item>rnfidealabstorel</item>
+            <item>rnfidealdown</item>
+            <item>rnfidealfactor</item>
+            <item>rnfidealhnf</item>
+            <item>rnfidealmul</item>
+            <item>rnfidealnormabs</item>
+            <item>rnfidealnormrel</item>
+            <item>rnfidealprimedec</item>
+            <item>rnfidealreltoabs</item>
+            <item>rnfidealtwoelt</item>
+            <item>rnfidealup</item>
+            <item>rnfinit</item>
+            <item>rnfisabelian</item>
+            <item>rnfisfree</item>
+            <item>rnfislocalcyclo</item>
+            <item>rnfisnorm</item>
+            <!-- Additional functions from the final list -->
+            <item>rnfisnorminit</item>
+            <item>rnfkummer</item>
+            <item>rnflllgram</item>
+            <item>rnfnormgroup</item>
+            <item>rnfpolred</item>
+            <item>rnfpolredabs</item>
+            <item>rnfpolredbest</item>
+            <item>rnfpseudobasis</item>
+            <item>rnfsteinitz</item>
+            <item>rootsof1</item>
+            <!-- Series functions -->
+            <item>seralgdep</item>
+            <item>serchop</item>
+            <item>serconvol</item>
+            <item>serdiffdep</item>
+            <item>serlaplace</item>
+            <item>serprec</item>
+            <item>serreverse</item>
+            <!-- Set functions -->
+            <item>setbinop</item>
+            <item>setdebug</item>
+            <item>setdelta</item>
+            <item>setintersect</item>
+            <item>setisset</item>
+            <item>setminus</item>
+            <item>setrand</item>
+            <item>setsearch</item>
+            <item>setunion</item>
+            <item>shift</item>
+            <item>shiftmul</item>
+            <item>sigma</item>
+            <item>sign</item>
+            <item>sin</item>
+            <item>sinc</item>
+            <item>sinh</item>
+            <item>sizebyte</item>
+            <item>sizedigit</item>
+            <item>snfrank</item>
+            <item>sqr</item>
+            <item>sqrt</item>
+            <item>sqrtint</item>
+            <item>sqrtn</item>
+            <item>sqrtnint</item>
+            <item>stirling</item>
+            <!-- String functions -->
+            <item>strchr</item>
+            <item>strexpand</item>
+            <item>strjoin</item>
+            <item>strprintf</item>
+            <item>strsplit</item>
+            <item>strtex</item>
+            <item>strtime</item>
+            <!-- Subcyclo functions -->
+            <item>subcyclohminus</item>
+            <item>subcycloiwasawa</item>
+            <item>subcyclopclgp</item>
+            <item>subgrouplist</item>
+            <item>substpol</item>
+            <item>substvec</item>
+            <!-- Sum functions -->
+            <item>sum</item>
+            <item>sumalt</item>
+            <item>sumdedekind</item>
+            <item>sumdigits</item>
+            <item>sumdiv</item>
+            <item>sumdivmult</item>
+            <item>sumeulerrat</item>
+            <item>sumformal</item>
+            <item>suminf</item>
+            <item>sumnum</item>
+            <item>sumnumap</item>
+            <item>sumnumapinit</item>
+            <item>sumnuminit</item>
+            <item>sumnumlagrange</item>
+            <item>sumnumlagrangeinit</item>
+            <item>sumnummonien</item>
+            <item>sumnummonieninit</item>
+            <item>sumnumrat</item>
+            <item>sumnumsidi</item>
+            <item>sumpos</item>
+            <item>tan</item>
+            <item>tanh</item>
+            <item>taylor</item>
+            <item>teichmuller</item>
+            <item>theta</item>
+            <item>thetanullk</item>
+            <item>thue</item>
+            <item>thueinit</item>
+            <item>trace</item>
+            <item>truncate</item>
+            <item>type</item>
+            <item>valuation</item>
+            <!-- Variable functions -->
+            <item>varhigher</item>
+            <item>variable</item>
+            <item>variables</item>
+            <item>varlower</item>
+            <!-- Vector functions -->
+            <item>vecextract</item>
+            <item>vecmax</item>
+            <item>vecmin</item>
+            <item>vecprod</item>
+            <item>vecsearch</item>
+            <item>vecsort</item>
+            <item>vecsum</item>
+            <item>vector</item>
+            <item>vectorsmall</item>
+            <item>vectorv</item>
+            <item>weber</item>
+            <!-- Zeta functions -->
+            <item>zeta</item>
+            <item>zetahurwitz</item>
+            <item>zetamult</item>
+            <item>zetamultall</item>
+            <item>zetamultconvert</item>
+            <item>zetamultdual</item>
+            <!-- ZN functions -->
+            <item>znchar</item>
+            <item>zncharconductor</item>
+            <item>znchardecompose</item>
+            <item>znchargauss</item>
+            <item>zncharinduce</item>
+            <item>zncharisodd</item>
+            <item>znchartokronecker</item>
+            <item>znchartoprimitive</item>
+            <item>znconreychar</item>
+            <item>znconreyconductor</item>
+            <item>znconreyexp</item>
+            <item>znconreylog</item>
+            <item>zncoppersmith</item>
+            <item>znlog</item>
+            <item>znorder</item>
+            <item>znprimroot</item>
+            <item>znstar</item>
+            <item>znsubgroupgenerators</item>
+        </list>
+
+        <!-- Constants -->
+        <list name="constants">
+            <item>Catalan</item>
+            <item>Euler</item>
+            <item>I</item>
+            <item>oo</item>
+            <item>Pi</item>
+            <item>O</item>
+        </list>
+
+        <!-- Contexts -->
+        <contexts>
+            <context name="Normal" attribute="Normal Text" lineEndContext="#stay">
+                <keyword attribute="Keyword" context="#stay" String="keywords"/>
+                <keyword attribute="Function" context="#stay" String="functions"/>
+                <keyword attribute="Constant" context="#stay" String="constants"/>
+                
+                <!-- Numbers -->
+                <RegExpr attribute="Number" context="#stay" String="\b[0-9]+(\.[0-9]+)?([eE][+-]?[0-9]+)?\b"/>
+                
+                <!-- Strings -->
+                <DetectChar attribute="String" context="String" char="&quot;"/>
+                
+                <!-- Comments -->
+                <RegExpr attribute="Comment" context="#stay" String="\\\\[^\n]*$"/>
+                <StringDetect attribute="Comment" context="MultiLineComment" String="/*"/>
+
+                <!-- Brackets -->
+                <DetectChar attribute="Brace" context="#stay" char="{"/>
+                <DetectChar attribute="Brace" context="#stay" char="}"/>
+                <DetectChar attribute="Parenthesis" context="#stay" char="("/>
+                <DetectChar attribute="Parenthesis" context="#stay" char=")"/>
+                <DetectChar attribute="Bracket" context="#stay" char="["/>
+                <DetectChar attribute="Bracket" context="#stay" char="]"/>
+
+                <!-- PARI/GP service commands (starting with \) -->
+                <RegExpr attribute="Operator" context="#stay" String="\\(a|B|c|d|e|g|gf|gm|h|l|m|o|p|pb|ps|q|r|s|t|u|um|uv|v|w|x|y)\s"/>
+                
+                <!-- Operators -->
+                <RegExpr attribute="Operator" context="#stay" String="(\+=|%=|==|!=|&lt;=|&gt;=|&amp;&amp;|\|\||\.\.|-&gt;|&lt;&lt;|&gt;&gt;|\+\+|--)"/>
+                <RegExpr attribute="Operator" context="#stay" String="(\+|-|\*|/|\\|\^|%|=|&lt;|&gt;|!|~|\||&amp;)"/>
+            </context>
+
+            <context name="String" attribute="String" lineEndContext="#pop">
+                <DetectChar attribute="String" context="#pop" char="&quot;"/>
+                <RegExpr attribute="String" context="#stay" String="\\."/>
+            </context>
+            
+            <context name="MultiLineComment" attribute="Comment" lineEndContext="#stay">
+                <RegExpr attribute="Comment" context="#stay" String=".*?(?=\*/)"/>
+                <StringDetect attribute="Comment" context="#pop" String="*/" endRegion="comment"/>
+            </context>
+        </contexts>
+
+        <!-- Styles -->
+        <itemDatas>
+            <itemData name="Normal Text" defStyleNum="dsNormal"/>
+            <itemData name="Keyword" defStyleNum="dsKeyword"/>
+            <itemData name="Function" defStyleNum="dsFunction"/>
+            <itemData name="Constant" defStyleNum="dsDataType"/>
+            <itemData name="Operator" defStyleNum="dsOperator"/>
+            <itemData name="Brace" defStyleNum="dsOperator"/>
+            <itemData name="Parenthesis" defStyleNum="dsNormal"/>
+            <itemData name="Bracket" defStyleNum="dsNormal"/>
+            <itemData name="Number" defStyleNum="dsDecVal"/>
+            <itemData name="String" defStyleNum="dsString"/>
+            <itemData name="Comment" defStyleNum="dsComment"/>
+        </itemDatas>
+    </highlighting>
+</language>
