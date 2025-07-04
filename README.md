@@ -4,6 +4,6 @@ This package provides syntax highlighting for GP, the scripting language of the 
 
 ## How to install:
 
-Clone the repo and place xml file (symlink by example) to your extensions folder located at:
+Clone the repo (or download `pari_gp.xml`) and place xml file (symlink by example) to your extensions folder located at:
 
 * Linux: `~/local/share/org.kde.syntax-highlighting/syntax/`
