@@ -12,7 +12,7 @@ Clone the repo (or download `pari-gp.xml`) and place xml file (symlink by exampl
 
 Please upload these files to the KDE repository.
 
-Instruction for commiting to KDE repository (GitLab instance).
+Instruction for commiting to KDE repository (GitLab instance):
 
 https://invent.kde.org/frameworks/syntax-highlighting#how-to-contribute
 
