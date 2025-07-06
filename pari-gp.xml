@@ -169,6 +169,7 @@
             <item>eval</item>
             <item>exp</item>
             <item>factor</item>
+            <item>fromdigits</item>
             <item>lift</item>
             <item>listcreate</item>
             <item>listkill</item>
